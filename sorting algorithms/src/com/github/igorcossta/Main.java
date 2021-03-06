@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         print(numbers);
-        numbers = InsertionSort.sort(numbers);
+        numbers = BubbleSort.sort(numbers);
         print(numbers);
     }
 
