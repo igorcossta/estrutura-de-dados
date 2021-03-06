@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         print(numbers);
-        numbers = BubbleSort.sort(numbers);
+        numbers = SelectionSort.sort(numbers);
         print(numbers);
     }
 
@@ -13,6 +13,6 @@ public class Main {
         for (int i : array) {
             System.out.print(i + " ");
         }
-        System.out.println();
+        System.out.println("");
     }
 }
