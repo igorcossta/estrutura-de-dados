@@ -40,5 +40,12 @@ public class Main {
 
         // teste de retornar valor do índice
         System.out.println("ValueOf Test -> " + array.valueOf(0));
+
+        // teste verificar se está vazia
+        System.out.println("IsEmpty Test -> " + array.isEmpty());
+
+        // teste limpar vetor
+        array.clear();
+        System.out.println("Clear Test -> " + array.isEmpty());
     }
 }

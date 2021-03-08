@@ -47,13 +47,27 @@ public class Vetor<T> {
     }
 
     public void remove(int index) {
-        if (index > array.length || index < 0) {
-            throw new ArrayIndexOutOfBoundsException();
-        }
+
+        if (isEmpty()) throw new RuntimeException("there is nothing to remove");
+
+        if (index > array.length || index < 0) throw new ArrayIndexOutOfBoundsException();
+
         for (int i = index; i < array.length - 1; i++) {
             this.array[i] = array[i + 1];
         }
         size--;
+    }
+
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    public void clear() {
+        isEmpty();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = null;
+        }
+        size = 0;
     }
 
     /***
